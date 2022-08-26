@@ -1,24 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 
-class App extends Component {
-  constructor() {
-    super();
+const App = () =>  {
 
-    this.state = {
-      count: 0,
-    };
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Main />
-      </div>
-    );
-  }
-}
+  
+  return (
+    <div className="all">
+      <Header />
+      <Main />
+      <Footer/>
+    </div>
+  );
+};
 
 export default App;
